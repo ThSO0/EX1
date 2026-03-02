@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Scanner aula = new Scanner(System.in);
+
+        // Usando a biblioteca Scanner, pegue 3 numeros inteiros do teclado e imprima na tela qual deles é o maior?
+
+        System.out.println( "Me diga um número: ");
+        int num1 = aula.nextInt();
+
+        System.out.println( "Me diga mais um número: ");
+        int num2 = aula.nextInt();
+
+        System.out.println( "Me diga mais um número: ");
+        int num3 = aula.nextInt();
+
+        int maior = num1;
+
+        if ( num1 > num2 && num1 > num3) {
+            maior = num1;
+        } else if ( num2 > num1 && num2 > num3){
+            maior = num2;
+        }else {
+            maior = num3;
+        }
+        System.out.println( "O maior é " + maior );
+        aula.close();
+    }
+}
